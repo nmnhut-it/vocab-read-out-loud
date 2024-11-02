@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .input-section {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-family: monospace;
+        }
+
+        .vocab-item {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .vocab-item:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .english {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .vietnamese {
+            color: #e74c3c;
+        }
+
+        .pronunciation {
+            color: #3498db;
+            font-style: italic;
+        }
+
+        .type {
+            color: #27ae60;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        select {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vocabulary Reader</h1>
+
+    <div class="input-section">
+        <textarea id="vocabInput" placeholder="Enter vocabulary list in format:
+1. fair: (n) hội chợ /feə/
+2. awesome: (adj) tuyệt vời /ˈɔːsəm/
+...">1. fair: (n) hội chợ /feə/
+2. awesome: (adj) tuyệt vời /ˈɔːsəm/
+3. open-air market: chợ ngoài trời /ˈəʊpən eə ˈmɑːkɪt/
+4. what do you like about it: bạn thích gì về nó /wɒt duː juː laɪk əˈbaʊt ɪt/
+5. costume: (n) trang phục /ˈkɒstjuːm/
+6. wear: (v) mặc /weə/</textarea>
+        <button onclick="parseAndDisplay()">Convert</button>
+    </div>
+
+    <div class="controls">
+        <button id="readAll">Read All Words</button>
+        <button id="stopReading">Stop Reading</button>
+        <select id="voiceSelect" hidden="true">
+            <option value="">Select Voice</option>
+        </select>
+        <label>
+            Speed:
+            <input type="range" id="speedRange" min="0.5" max="1.5" step="0.1" value="1">
+            <span id="speedValue">1.0</span>
+        </label>
+    </div>
+
+    <div id="vocabularyList"></div>
+
+    <script>
+        let synth = window.speechSynthesis;
+        let voices = [];
+        let currentUtterance = null;
+        let isReading = false;
+
+        function loadVoices() {
+            voices = synth.getVoices();
+            const voiceSelect = document.getElementById('voiceSelect');
+            voiceSelect.innerHTML = '<option value="">Select Voice</option>';
+
+            voices.forEach((voice, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.textContent = `${voice.name} (${voice.lang})`;
+                voiceSelect.appendChild(option);
+            });
+        }
+
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = loadVoices;
+        }
+
+        function parseAndDisplay() {
+            const input = document.getElementById('vocabInput').value;
+            const lines = input.trim().split('\n');
+            const vocabularyList = document.getElementById('vocabularyList');
+            vocabularyList.innerHTML = '';
+
+            lines.forEach(line => {
+                // Remove the number and dot at the start
+                const content = line.replace(/^\d+\.\s*/, '');
+
+                // Parse the line
+                const parts = content.split(':');
+                if (parts.length < 2) return;
+
+                const english = parts[0].trim();
+                const rest = parts[1].trim();
+
+                // Parse type, Vietnamese, and pronunciation
+                let type = '';
+                let vietnamese = '';
+                let pronunciation = '';
+
+                const typeMatch = rest.match(/\([a-z]+\)/);
+                if (typeMatch) {
+                    type = typeMatch[0];
+                }
+
+                const pronunciationMatch = rest.match(/\/[^/]+\//);
+                if (pronunciationMatch) {
+                    pronunciation = pronunciationMatch[0];
+                }
+
+                // Get Vietnamese text (everything between type and pronunciation)
+                vietnamese = rest
+                    .replace(type, '')
+                    .replace(pronunciation, '')
+                    .trim();
+
+                // Create vocab item
+                const vocabItem = document.createElement('div');
+                vocabItem.className = 'vocab-item';
+                vocabItem.dataset.text = english;
+                vocabItem.innerHTML = `
+                    <span class="english">${english}</span>
+                    <span class="type">${type}</span>
+                    <span class="vietnamese">${vietnamese}</span>
+                    <span class="pronunciation">${pronunciation}</span>
+                `;
+
+                vocabItem.addEventListener('click', () => {
+                    readText(english);
+                });
+
+                vocabularyList.appendChild(vocabItem);
+            });
+        }
+
+        function readText(text) {
+            if (isReading) {
+                synth.cancel();
+            }
+
+            currentUtterance = new SpeechSynthesisUtterance(text);
+
+            const voiceIndex = document.getElementById('voiceSelect').value;
+            if (voiceIndex) {
+                currentUtterance.voice = voices[voiceIndex];
+            }
+
+            currentUtterance.rate = parseFloat(document.getElementById('speedRange').value);
+
+            synth.speak(currentUtterance);
+        }
+
+        document.getElementById('readAll').addEventListener('click', async () => {
+            isReading = true;
+            const items = document.querySelectorAll('.vocab-item');
+
+            for (let item of items) {
+                if (!isReading) break;
+
+                readText(item.dataset.text);
+
+                await new Promise(resolve => {
+                    currentUtterance.onend = resolve;
+                });
+
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+
+            isReading = false;
+        });
+
+        document.getElementById('stopReading').addEventListener('click', () => {
+            isReading = false;
+            synth.cancel();
+        });
+
+        document.getElementById('speedRange').addEventListener('input', (e) => {
+            document.getElementById('speedValue').textContent = e.target.value;
+        });
+
+        // Initial parse of the default text
+        parseAndDisplay();
+    </script>
+</body>
+
+</html>
