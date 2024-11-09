@@ -62,7 +62,11 @@ class OpenDictIPA:
             word_pronunciations = []
             for word in words:
                 if word in self.pronunciations:
-                    word_pronunciations.append(self.pronunciations[word][0])  # Take first pronunciation for each word
+                    current_pronunciation =self.pronunciations[word][0].strip("/").lstrip("/");
+                    split = current_pronunciation.split(",");
+                    if (len(split) > 0):
+                        current_pronunciation = split[0].strip("/").lstrip("/");
+                    word_pronunciations.append(current_pronunciation)  # Take first pronunciation for each word
                 else:
                     return []  # If any word is missing, return empty list
             return [' '.join(word_pronunciations)]  # Combine words with spaces
