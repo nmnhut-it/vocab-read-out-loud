@@ -95,6 +95,7 @@ class WordParser:
                     else:
                         combined_pronunciation = combined_pronunciation +"-"+ pronunciation
                     print (pronunciation);
+                    pronunciation = None
 
                 if combined_pronunciation is not None:
                     pronunciation = combined_pronunciation;
