@@ -101,7 +101,7 @@
     <div class="controls">
         <button id="readAll">Read All Words</button>
         <button id="stopReading">Stop Reading</button>
-        <select id="voiceSelect" hidden="true">
+        <select id="voiceSelect">
             <option value="">Select Voice</option>
         </select>
         <label>
@@ -125,10 +125,12 @@
             voiceSelect.innerHTML = '<option value="">Select Voice</option>';
 
             voices.forEach((voice, index) => {
-                const option = document.createElement('option');
-                option.value = index;
-                option.textContent = `${voice.name} (${voice.lang})`;
-                voiceSelect.appendChild(option);
+                if (voice.lang.toLowerCase().includes('en')) {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = `${voice.name} (${voice.lang})`;
+                    voiceSelect.appendChild(option);
+                }
             });
         }
 
