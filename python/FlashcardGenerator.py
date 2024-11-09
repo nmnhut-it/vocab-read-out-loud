@@ -50,12 +50,19 @@ class FlashcardGenerator:
                         word_size: int = 72,
                         type_size: int = 48,
                         pron_size: int = 48,
-                        meaning_size: int = 56) -> str:
-        """
-        Create a flashcard image with modern Pillow resampling.
-        """
-        # Create new image with white background
-        img = Image.new('RGB', (1280, 720), color=self.get_background_color())
+                        meaning_size: int = 56,
+                        background_path = "bg.jpg") -> str:
+        # Load and resize background image
+        if os.path.exists(background_path):
+            background = Image.open(background_path)
+            background = background.convert('RGB')
+            background = background.resize((1280, 720), Image.Resampling.LANCZOS)
+        else:
+            # Fallback to solid color if background image not found
+            background = Image.new('RGB', (1280, 720), color=self.get_background_color())
+
+        img = background;
+        # Create drawing object
         draw = ImageDraw.Draw(img)
 
         try:
@@ -65,7 +72,7 @@ class FlashcardGenerator:
                 'type': ImageFont.truetype("times.ttf", type_size),
                 'pron': self.font_manager.get_ipa_font(pron_size),
                 'meaning': ImageFont.truetype("times.ttf", meaning_size),
-                'watermark': ImageFont.truetype("times.ttf", meaning_size//2)
+                'watermark': ImageFont.truetype("times.ttf", meaning_size//2.3)
             }
         except OSError:
             try:
@@ -75,7 +82,7 @@ class FlashcardGenerator:
                     'type': ImageFont.truetype("arial.ttf", type_size),
                     'pron': self.font_manager.get_ipa_font(pron_size),
                     'meaning': ImageFont.truetype("arial.ttf", meaning_size),
-                    'watermark': ImageFont.truetype("arial.ttf", meaning_size//2)
+                    'watermark': ImageFont.truetype("arial.ttf", meaning_size//2.3)
                 }
             except OSError:
                 # Last resort fallback to default font
@@ -85,11 +92,11 @@ class FlashcardGenerator:
 
         # Define vertical positions
         positions = {
-            'word': 180,
-            'type': 280,
+            'word': 220,
+            'type': 300,
             'pron': 380,
             'meaning': 480,
-            'watermark': 580
+            'watermark': 570
         }
         center_x = 640
 
@@ -115,7 +122,7 @@ class FlashcardGenerator:
                     font=fonts['meaning'], fill='black', anchor="mm")
 
             # Draw watermark
-            watermark_text = "Created by: Nguyễn Minh Nhựt - nmnhut.en@gmail.com\nhttps://github.com/nmnhut-it"
+            watermark_text = "Created by Nguyễn Minh Nhựt - background designed by brgfx / Freepik"
             draw.text((center_x, positions['watermark']), watermark_text,
                     font=fonts['watermark'], fill='grey', anchor="mm")
         except Exception as e:

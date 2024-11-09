@@ -174,7 +174,7 @@ class EnhancedFlashcardGenerator(FlashcardGenerator):
         accent_color = EnhancedFlashcardGenerator.hex_to_rgb(self.current_theme.accent)
 
         # Background bar
-        bg_width = 1200
+        bg_width = 700
         bg_height = 8
         bg_bar = ColorClip(
             size=(bg_width, bg_height),
@@ -190,7 +190,7 @@ class EnhancedFlashcardGenerator(FlashcardGenerator):
 
         # Combine bars
         composite = CompositeVideoClip([bg_bar, progress])
-        composite = composite.set_position(('center', 680))
+        composite = composite.set_position(('center', 180))
         return composite.set_duration(duration)
 
     def draw_text_with_shadow(self, draw: ImageDraw, position: Tuple[int, int],
