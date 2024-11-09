@@ -6,6 +6,8 @@ from gtts import gTTS
 from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, AudioFileClip
 from moviepy.editor import ImageClip, concatenate_videoclips
 from PIL import Image, ImageDraw, ImageFont
+from PIL.Image import Resampling  # Import the new Resampling enum
+
 import os
 import tempfile
 import shutil
@@ -41,58 +43,54 @@ class FlashcardGenerator:
         tts.save(audio_path)
         return audio_path
 
+    def get_background_color(self):
+        return "white";
+
     def create_card_image(self, entry: WordEntry,
-                     word_size: int = 72,
-                     type_size: int = 48,
-                     pron_size: int = 48,
-                     meaning_size: int = 56) -> str:
+                        word_size: int = 72,
+                        type_size: int = 48,
+                        pron_size: int = 48,
+                        meaning_size: int = 56) -> str:
         """
-        Create a flashcard image with customizable font sizes
-
-        Args:
-            entry: WordEntry containing word information
-            word_size: Font size for the main word (default: 72)
-            type_size: Font size for word type (default: 48)
-            pron_size: Font size for pronunciation (default: 48)
-            meaning_size: Font size for meaning (default: 56)
-
-        Returns:
-            str: Path to the generated image file
+        Create a flashcard image with modern Pillow resampling.
         """
-        img = Image.new('RGB', (1280, 720), color='white')
+        # Create new image with white background
+        img = Image.new('RGB', (1280, 720), color=self.get_background_color())
         draw = ImageDraw.Draw(img)
 
-        # Load Times New Roman font in different sizes
         try:
-            word_font = ImageFont.truetype("times.ttf", word_size)
-            type_font = ImageFont.truetype("times.ttf", type_size)
-            pron_font = self.font_manager.get_ipa_font(pron_size);
-            meaning_font = ImageFont.truetype("times.ttf", meaning_size)
-            watermark_font = ImageFont.truetype("times.ttf", meaning_size/2)
+            # Load fonts with error handling
+            fonts = {
+                'word': ImageFont.truetype("times.ttf", word_size),
+                'type': ImageFont.truetype("times.ttf", type_size),
+                'pron': self.font_manager.get_ipa_font(pron_size),
+                'meaning': ImageFont.truetype("times.ttf", meaning_size),
+                'watermark': ImageFont.truetype("times.ttf", meaning_size//2)
+            }
         except OSError:
-            # Fallback to Arial or system default if Times New Roman is not available
             try:
-                word_font = ImageFont.truetype("arial.ttf", word_size)
-                type_font = ImageFont.truetype("arial.ttf", type_size)
-                pron_font = self.font_manager.get_ipa_font(pron_size)
-                meaning_font = ImageFont.truetype("arial.ttf", meaning_size)
-                watermark_font = ImageFont.truetype("arial.ttf", meaning_size/2)
+                # Fallback to Arial
+                fonts = {
+                    'word': ImageFont.truetype("arial.ttf", word_size),
+                    'type': ImageFont.truetype("arial.ttf", type_size),
+                    'pron': self.font_manager.get_ipa_font(pron_size),
+                    'meaning': ImageFont.truetype("arial.ttf", meaning_size),
+                    'watermark': ImageFont.truetype("arial.ttf", meaning_size//2)
+                }
             except OSError:
-                # If no system fonts are available, use default
-                print("Warning: Could not load custom fonts. Using default font.")
-                word_font = ImageFont.load_default()
-                type_font = ImageFont.load_default()
-                pron_font = ImageFont.load_default()
-                meaning_font = ImageFont.load_default()
-                watermark_font = ImageFont.load_default()
+                # Last resort fallback to default font
+                print("Warning: Using default font as fallback")
+                default_font = ImageFont.load_default()
+                fonts = {k: default_font for k in ['word', 'type', 'pron', 'meaning', 'watermark']}
 
-
-        # Define positions with more space for larger text
-        word_y = 180
-        type_y = word_y + 100
-        pron_y = type_y + 100
-        meaning_y = pron_y + 100
-        watermark_y = meaning_y + 100
+        # Define vertical positions
+        positions = {
+            'word': 180,
+            'type': 280,
+            'pron': 380,
+            'meaning': 480,
+            'watermark': 580
+        }
         center_x = 640
 
         # Draw word (and irregular forms if present)
@@ -100,31 +98,43 @@ class FlashcardGenerator:
         if entry.irregular_forms:
             word_text = " - ".join(entry.irregular_forms)
 
-        # Draw elements with custom fonts
-        draw.text((center_x, word_y), word_text,
-                font=word_font, fill='black', anchor="mm")
+        # Draw each element with error handling for text rendering
+        try:
+            draw.text((center_x, positions['word']), word_text,
+                    font=fonts['word'], fill='black', anchor="mm")
 
-        if entry.word_type:
-            draw.text((center_x, type_y), f"({entry.word_type})",
-                    font=type_font, fill='gray', anchor="mm")
+            if entry.word_type:
+                draw.text((center_x, positions['type']), f"({entry.word_type})",
+                        font=fonts['type'], fill='gray', anchor="mm")
 
-        if entry.pronunciation:
-            draw.text((center_x, pron_y), f"/{entry.pronunciation}/",
-                    font=pron_font, fill='blue', anchor="mm")
+            if entry.pronunciation:
+                draw.text((center_x, positions['pron']), f"/{entry.pronunciation}/",
+                        font=fonts['pron'], fill='blue', anchor="mm")
 
-        draw.text((center_x, meaning_y), entry.meaning,
-                font=meaning_font, fill='black', anchor="mm")
+            draw.text((center_x, positions['meaning']), entry.meaning,
+                    font=fonts['meaning'], fill='black', anchor="mm")
 
-        #
-        draw.text((center_x, watermark_y), "Created by: Nguyễn Minh Nhựt - nmnhut.en@gmail.com",
-                font=watermark_font, fill='grey', anchor="mm")
-
+            # Draw watermark
+            watermark_text = "Created by: Nguyễn Minh Nhựt - nmnhut.en@gmail.com\nhttps://github.com/nmnhut-it"
+            draw.text((center_x, positions['watermark']), watermark_text,
+                    font=fonts['watermark'], fill='grey', anchor="mm")
+        except Exception as e:
+            print(f"Warning: Error drawing text: {str(e)}")
+            # Continue with basic rendering if advanced text features fail
+            draw.text((center_x, positions['word']), word_text,
+                    font=ImageFont.load_default(), fill='black')
 
         # Save image with safe filename
         safe_word = "".join(c if c.isalnum() else "_" for c in entry.word)
         img_path = os.path.join(self.image_dir, f"{safe_word}.png")
+
+        # Use LANCZOS resampling if resizing is needed
+        if img.size != (1280, 720):
+            img = img.resize((1280, 720), Resampling.LANCZOS)
+
         img.save(img_path)
         return img_path
+
 
     def create_video(self, entries: List[WordEntry]) -> str:
         """Create video from word entries"""
@@ -156,7 +166,7 @@ class FlashcardGenerator:
         output_path = os.path.join(self.output_dir, f"flashcards_{self.timestamp}.mp4")
 
         try:
-            final_clip.write_videofile(output_path, fps=24, codec='libx264')
+            final_clip.write_videofile(output_path, fps=8, codec='libx264')
             return output_path
         finally:
             final_clip.close()
