@@ -1,7 +1,7 @@
 import gradio as gr
 import re
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List, Optional,Tuple, List, Dict
 from gtts import gTTS
 from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, AudioFileClip
 from moviepy.editor import ImageClip, concatenate_videoclips
@@ -13,99 +13,11 @@ import os
 from datetime import datetime
 from OpenDictIPA import OpenDictIPA;
 import unicodedata
+import pandas as pd
+from WordEntry import WordEntry;
 
 
-@dataclass
-class WordEntry:
-    word: str
-    word_type: Optional[str]
-    meaning: str
-    pronunciation: Optional[str] = None
-    number: Optional[int] = None
-    irregular_forms: List[str] = None
-
-# Modify your WordParser class:
-class WordParser:
-    def __init__(self, ipa_lookup: Optional[OpenDictIPA] = None):
-        self.ipa_lookup = ipa_lookup
-
-    def parse_line(self, line: str, line_number: int = None) -> WordEntry:
-        """Parse a single line of the word list"""
-        line = line.strip()
-
-        # Pattern for line with pronunciation at end
-        pattern1 = r'^(?:(\d+)\.\s+)?([^:]+):\s*(?:\(([a-z]+)\))?\s*([^/]+)(?:/([^/]+)/)?\s*$'
-
-        match = re.match(pattern1, line)
-        if not match:
-            raise ValueError(f"Invalid line format: {line}")
-
-        number = int(match.group(1)) if match.group(1) else line_number
-        word_part = match.group(2).strip()
-        word_type = match.group(3)
-        meaning = match.group(4).strip()
-        pronunciation = match.group(5).strip() if match.group(5) else None
-
-
-
-        # Check for irregular verb forms
-        irregular_forms = None
-        if " - " in word_part:
-            irregular_forms = [form.strip() for form in word_part.split(" - ")]
-            word = irregular_forms[0]
-            # If no pronunciation provided in input, try to look it up
-            if not pronunciation and self.ipa_lookup:
-                pronunciations = self.ipa_lookup.get_pronunciation(word)
-                if pronunciations:
-                    # Use first pronunciation
-                    pronunciation = pronunciations[0]
-        else:
-            word = word_part
-            # If no pronunciation provided in input, try to look it up
-            if not pronunciation and self.ipa_lookup:
-                pronunciations = self.ipa_lookup.get_pronunciation(word)
-                if pronunciations:
-                    pronunciation = pronunciations[0]
-        pronunciation = self.normalize_pronunciation(pronunciation);
-        return WordEntry(
-            number=number,
-            word=word,
-            word_type=word_type,
-            meaning=meaning,
-            pronunciation=pronunciation,
-            irregular_forms=irregular_forms
-        )
-
-
-    def normalize_pronunciation(self, ipa_text: str) -> str:
-        ipa_text = unicodedata.normalize("NFC",ipa_text);
-        """
-        Normalize stress marks to the standard IPA vertical line.
-        """
-        # Different possible stress mark characters
-        stress_marks = {
-            '\u02C8',  # ˈ MODIFIER LETTER VERTICAL LINE (preferred IPA)
-            '\u0027',  # ' APOSTROPHE
-            '\u2032',  # ′ PRIME
-        }
-        # Replace all variants with the standard IPA stress mark
-        for mark in stress_marks:
-            ipa_text = ipa_text.replace(mark, 'ˈ')  # Using standard IPA stress mark
-        return ipa_text
-    def parse_text(self, text: str) -> List[WordEntry]:
-        """Parse the entire text input"""
-        lines = [line for line in text.strip().split("\n") if line.strip()]
-        entries = []
-
-        for i, line in enumerate(lines, 1):
-            try:
-                entry = self.parse_line(line, i)
-                entries.append(entry)
-            except ValueError as e:
-                print(f"Warning: Skipping invalid line {i}: {e}")
-
-        return entries
-
+from IPAFontManager import IPAFontManager
 class FlashcardGenerator:
     def __init__(self):
         # Create output directories if they don't exist
@@ -113,6 +25,8 @@ class FlashcardGenerator:
         self.output_dir = f"flashcards_{self.timestamp}"
         self.audio_dir = os.path.join(self.output_dir, "audio")
         self.image_dir = os.path.join(self.output_dir, "images")
+        self.font_manager = IPAFontManager()
+
 
         os.makedirs(self.output_dir, exist_ok=True)
         os.makedirs(self.audio_dir, exist_ok=True)
@@ -152,7 +66,7 @@ class FlashcardGenerator:
         try:
             word_font = ImageFont.truetype("times.ttf", word_size)
             type_font = ImageFont.truetype("times.ttf", type_size)
-            pron_font = ImageFont.truetype("times.ttf", pron_size)
+            pron_font = self.font_manager.get_ipa_font(pron_size);
             meaning_font = ImageFont.truetype("times.ttf", meaning_size)
             watermark_font = ImageFont.truetype("times.ttf", meaning_size/2)
         except OSError:
@@ -160,7 +74,7 @@ class FlashcardGenerator:
             try:
                 word_font = ImageFont.truetype("arial.ttf", word_size)
                 type_font = ImageFont.truetype("arial.ttf", type_size)
-                pron_font = ImageFont.truetype("arial.ttf", pron_size)
+                pron_font = self.font_manager.get_ipa_font(pron_size)
                 meaning_font = ImageFont.truetype("arial.ttf", meaning_size)
                 watermark_font = ImageFont.truetype("arial.ttf", meaning_size/2)
             except OSError:
@@ -239,7 +153,7 @@ class FlashcardGenerator:
 
         # Concatenate all clips
         final_clip = concatenate_videoclips(clips, method="compose")
-        output_path = os.path.join(self.output_dir, "flashcards.mp4")
+        output_path = os.path.join(self.output_dir, f"flashcards_{self.timestamp}.mp4")
 
         try:
             final_clip.write_videofile(output_path, fps=24, codec='libx264')
@@ -256,71 +170,3 @@ class FlashcardGenerator:
             shutil.rmtree(self.audio_dir)
         except Exception as e:
             print(f"Error during cleanup: {str(e)}")
-
-def process_text(text: str) -> str:
-    """Process input text and generate video"""
-    # Initialize the IPA lookup
-    ipa_lookup = OpenDictIPA(".")
-    ipa_lookup.load_ipa_dict("en_UK")  # Load American English pronunciations
-    parser = WordParser(ipa_lookup=ipa_lookup);
-    generator = FlashcardGenerator()
-
-    try:
-        entries = parser.parse_text(text)
-        if not entries:
-            raise ValueError("No valid entries found in the input text")
-        video_path = generator.create_video(entries)
-        return video_path
-    except Exception as e:
-        print(f"Error during processing: {str(e)}")
-        raise
-    finally:
-        generator.cleanup()
-
-# Create Gradio interface
-def create_interface():
-    with gr.Blocks() as app:
-        gr.Markdown("""
-        # English Flashcard Video Generator
-
-        Enter your word list in either format:
-        ```
-        1. design: (v) thiết kế
-        2. buy - bought - bought: (v) mua
-
-        # Or without numbers:
-        rainforest: (n) rừng mưa nhiệt đới /ˈreɪnfɒrɪst/
-        climate change: biến đổi khí hậu /ˈklaɪmət tʃeɪndʒ/
-        ```
-        """)
-
-        with gr.Row():
-            text_input = gr.Textbox(
-                label="Enter word list",
-                lines=10,
-                placeholder="Enter your word list here..."
-            )
-
-        with gr.Row():
-            generate_btn = gr.Button("Generate Video")
-
-        with gr.Row():
-            video_output = gr.Video(label="Generated Flashcards")
-
-        generate_btn.click(
-            fn=process_text,
-            inputs=[text_input],
-            outputs=[video_output]
-        )
-
-    return app
-
-# initialize
-
-
-
-#---------------------------------------------------
-
-if __name__ == "__main__":
-    app = create_interface()
-    app.launch()
