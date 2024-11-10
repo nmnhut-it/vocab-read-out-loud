@@ -334,6 +334,7 @@ class EnhancedFlashcardGenerator(FlashcardGenerator):
             # Add outro if intro was included
             if include_intro:
                 # clips.append(transition)
+                print("include outro")
                 clips.append(outro)
                 temp_clips.append(outro)
 
@@ -343,6 +344,7 @@ class EnhancedFlashcardGenerator(FlashcardGenerator):
             # Concatenate all clips
             final_clip = concatenate_videoclips(clips, method="compose")
             temp_clips.append(final_clip)
+            print("to final clip")
 
             # Add background music if provided
             if background_music and os.path.exists(background_music):
@@ -371,7 +373,7 @@ class EnhancedFlashcardGenerator(FlashcardGenerator):
                 threads=4,
                 logger=None
             )
-
+            print("finish writing")
             return output_path
 
         except Exception as e:
