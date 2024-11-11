@@ -1,0 +1,6 @@
+==================== Page 1 ====================
+He writes a book and runs fast.
+==================== Page 2 ====================
+She wrote many books and was running.
+==================== Page 3 ====================
+They write stories and will run tomorrow.

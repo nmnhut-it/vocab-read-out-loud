@@ -4,110 +4,178 @@ from pathlib import Path
 from OCRTool import OCRTool
 import tempfile
 from pdf2image import convert_from_path
-import shutil
+import datetime
+import json
+from PIL import Image
 
 class GradioOCRInterface:
     def __init__(self):
         self.ocr_tool = OCRTool()
+        self.output_dir = Path("ocr_output")
+        self.output_dir.mkdir(exist_ok=True)
 
-    def convert_pdf_to_images(self, pdf_path):
+        # Create metadata file
+        self.metadata_file = self.output_dir / "processing_history.json"
+        self.load_processing_history()
+
+    def load_processing_history(self):
+        """Load or initialize processing history"""
+        if self.metadata_file.exists():
+            with open(self.metadata_file, 'r', encoding='utf-8') as f:
+                self.processing_history = json.load(f)
+        else:
+            self.processing_history = []
+
+    def save_processing_history(self):
+        """Save processing history to metadata file"""
+        with open(self.metadata_file, 'w', encoding='utf-8') as f:
+            json.dump(self.processing_history, f, indent=2)
+
+    def generate_output_filename(self, original_filename, batch=False):
+        """Generate unique output filename"""
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        stem = Path(original_filename).stem
+        if batch:
+            return f"{stem}_batch_{timestamp}.txt"
+        return f"{stem}_{timestamp}.txt"
+
+    def save_text_output(self, text, original_filename, lang, batch=False):
+        """Save extracted text to file and update history"""
+        try:
+            output_filename = self.generate_output_filename(original_filename, batch)
+            output_path = self.output_dir / output_filename
+
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(text)
+
+            entry = {
+                "timestamp": datetime.datetime.now().isoformat(),
+                "original_file": original_filename,
+                "output_file": output_filename,
+                "language": lang,
+                "batch_process": batch
+            }
+            self.processing_history.append(entry)
+            self.save_processing_history()
+
+            return str(output_path)
+        except Exception as e:
+            return f"Error saving output: {str(e)}"
+
+    def convert_pdf_to_images(self, pdf_path, poppler_path=None):
         """Convert PDF file to images"""
         try:
-            # Convert PDF to images
-            images = convert_from_path(pdf_path, poppler_path="D:/poppler-24.08.0/Library/bin")
+            # Convert PDF to images with higher DPI for better quality
+            images = convert_from_path(
+                pdf_path,
+                poppler_path=poppler_path,
+                dpi=300,  # Higher DPI for better quality
+                fmt='PNG'
+            )
             return images
         except Exception as e:
             raise Exception(f"Failed to convert PDF: {str(e)}")
 
     def process_file(self, file, lang):
-        """Process a single file (image or PDF) and return extracted text"""
+        """Process a single file and save output"""
         try:
             file_path = Path(file.name)
 
             # Handle PDF files
             if file_path.suffix.lower() == '.pdf':
-                images = self.convert_pdf_to_images(file_path)
+                images = self.convert_pdf_to_images(file_path,poppler_path="D:/poppler-24.08.0/Library/bin")
                 texts = []
+
                 for i, image in enumerate(images, 1):
                     # Save the image temporarily
                     with tempfile.NamedTemporaryFile(delete=False, suffix='.png') as temp_file:
                         image.save(temp_file.name)
                         # Extract text using OCR tool
                         text = self.ocr_tool.extract_text(temp_file.name, lang)
-                        texts.append(f"Page {i}:\n{text}")
+                        texts.append(f"\n{'='*20} Page {i} {'='*20}\n\n{text}")
                     os.unlink(temp_file.name)
-                return "\n\n" + "="*50 + "\n\n".join(texts)
 
-            # Handle image files
+                text = "\n\n".join(texts)
+
             else:
+                # Handle image files
                 text = self.ocr_tool.extract_text(file_path, lang)
-                return text if not text.startswith("Error:") else f"❌ {text}"
 
-        except Exception as e:
-            return f"❌ Error: {str(e)}"
+            if not text.startswith("Error:"):
+                # Save the output
+                output_path = self.save_text_output(text, file_path.name, lang)
+                return f"{text}\n\n[Output saved to: {output_path}]"
+            else:
+                return f"❌ {text}"
 
-    def process_image(self, image, lang):
-        """Process a single uploaded image and return extracted text"""
-        try:
-            # Save the image temporarily
-            with tempfile.NamedTemporaryFile(delete=False, suffix='.png') as temp_file:
-                image.save(temp_file.name)
-                # Extract text using OCR tool
-                text = self.ocr_tool.extract_text(temp_file.name, lang)
-            # Clean up temporary file
-            os.unlink(temp_file.name)
-
-            return text if not text.startswith("Error:") else f"❌ {text}"
         except Exception as e:
             return f"❌ Error: {str(e)}"
 
     def process_batch(self, files, lang):
-        """Process multiple files (images or PDFs) and return results"""
+        """Process multiple files and save combined output"""
         results = []
+        combined_text = []
+
         for file in files:
             try:
                 file_path = Path(file.name)
                 filename = file_path.name
 
-                # Handle PDF files
-                if file_path.suffix.lower() == '.pdf':
-                    results.append(f"📑 Processing PDF: {filename}")
-                    images = self.convert_pdf_to_images(file_path)
-                    for i, image in enumerate(images, 1):
-                        with tempfile.NamedTemporaryFile(delete=False, suffix='.png') as temp_file:
-                            image.save(temp_file.name)
-                            text = self.ocr_tool.extract_text(temp_file.name, lang)
-                            results.append(f"Page {i}:\n{text}")
-                        os.unlink(temp_file.name)
+                # Add file header
+                file_header = f"\n{'#'*40}\n{filename}\n{'#'*40}\n"
+                results.append(file_header)
+                combined_text.append(file_header)
 
-                # Handle image files
-                else:
-                    text = self.ocr_tool.extract_text(file_path, lang)
-                    results.append(f"📄 {filename}:\n{text}")
+                # Process file
+                text = self.process_file(file, lang)
+                # Remove the individual file save message for combined output
+                text_for_combined = text.split("\n\n[Output saved to:")[0]
 
-                results.append("="*50)
+                results.append(text)
+                combined_text.append(text_for_combined)
 
             except Exception as e:
-                results.append(f"❌ Error processing {filename}: {str(e)}")
-                results.append("="*50)
+                error_msg = f"❌ Error processing {filename}: {str(e)}"
+                results.append(error_msg)
+                combined_text.append(error_msg)
 
-        return "\n\n".join(results)
+            separator = "\n" + "="*50 + "\n"
+            results.append(separator)
+            combined_text.append(separator)
+
+        # Save combined output
+        combined_output = "\n".join(combined_text)
+        batch_output_path = self.save_text_output(
+            combined_output,
+            "batch_processing",
+            lang,
+            batch=True
+        )
+
+        # Add batch save message
+        results.append(f"\n[Combined batch output saved to: {batch_output_path}]")
+
+        return "\n".join(results)
 
     def create_interface(self):
         """Create and configure the Gradio interface"""
-        # Available language options
         languages = {
             "English": "eng",
             "French": "fra",
             "German": "deu",
             "Spanish": "spa",
-            "Italian": "ita"
+            "Italian": "ita",
+            "Chinese (Simplified)": "chi_sim",
+            "Japanese": "jpn",
+            "Korean": "kor"
         }
 
-        # Create interface with tabs for single and batch processing
         with gr.Blocks(title="OCR Text Extraction Tool") as interface:
             gr.Markdown("# OCR Text Extraction Tool")
-            gr.Markdown("Extract text from images and PDFs using Tesseract OCR")
+            gr.Markdown("""
+            Extract text from images and PDFs with automatic saving to 'ocr_output' folder.
+            Supports multiple languages and batch processing.
+            """)
 
             with gr.Tabs():
                 # Single file processing tab
@@ -128,7 +196,7 @@ class GradioOCRInterface:
                         single_output = gr.Textbox(
                             label="Extracted Text",
                             placeholder="Extracted text will appear here...",
-                            lines=10
+                            lines=15
                         )
 
                 # Batch processing tab
@@ -150,7 +218,7 @@ class GradioOCRInterface:
                         batch_output = gr.Textbox(
                             label="Batch Results",
                             placeholder="Results will appear here...",
-                            lines=15
+                            lines=20
                         )
 
             # Set up event handlers

@@ -1,0 +1,1545 @@
+Total number of unique words across all pages: 5472
+==================================================
+
+Page 1 - 165 new unique words:
+--------------------------------------------------
+0                1                2                3                4              
+5                6                64               7                7m             
+9                a                a9               adit             ae             
+af               ag               am               an               any            
+as               ate              ay               bae              bal            
+ban              ber              bi               binh             bs             
+by               c                ca               cea              cho            
+chu              clos             cnet             duc              e              
+ea               eae              eas              ee               ef             
+eo               ep               es               ez               f              
+fey              ff               g                ge               gee            
+giao             gl               gs               ha               hae            
+hai              he               hoa              hoang            hong           
+hs               huong            i                ic               ie             
+ii               in               ior              j                jf             
+ke               kieu             kim              l                lay            
+le               loe              lous             lp               ly             
+m                mi               mk               ml               mlk            
+mm               ms               mw               n                naa            
+nam              ng               nguyen           nha              ni             
+o                od               oe               of               og             
+on               oo               os               ow               ox             
+p                pa               pbs              pd               pe             
+pearson          pee              phuqng           ple              pv             
+pw               quang            r                ra               re             
+rr               rs               rwise            ry               s              
+sachhoc          se               sed              see              sine           
+sras             srseo            ss               t                tat            
+th               thu              ts               ty               v              
+van              ve               vi               viet             vu             
+vy               w                wae              we               wn             
+wo               ww               x                xn               xuan           
+xuat             y                ye               yn               z              
+
+Page 2 - 70 new unique words:
+--------------------------------------------------
+10               100              18               28               40             
+60               62               76               8                86             
+96               98               and              better           book           
+cc               ccc              ccccccccccceeeeeeevseveeveueueuvevtveseseseeseweveees  cccccccccceettttttesveeree  cccccceeeees   
+cccmesesnamemmmcemenmamanamemen  cco              cleetetttteettetttties  co               community      
+contents         coon             cscsssssssseeee  do               ecotourism     
+eisccsseeeesecreers  environment      equality         errilt           et             
+for              gender           guiralt          humans           iioooccccccccccccceeeeeseeeteseetttttttttee
+international    inventions       learn            map              mo             
+music            ne               new              o0               occ            
+occccccccccccccettttteetereeee  oii              ooo              oooicccccccccccceeeertsttereereeee  oooo           
+oooooo           ooooooioicccccccccccccccceestetstrtrtttitrerttieive  organisations    page             protecting     
+reed             review           reviow           rrl              sue            
+the              to               ue               unit             ways           
+
+Page 3 - 190 new unique words:
+--------------------------------------------------
+12               12nam            2018             26               4m             
+6n               anh              b                b6               b6n            
+bac              bai              bang             bgddt            bo             
+cac              cap              ch               chat             chic           
+ching            cht              chung            chuong           chutc          
+chuy             cia              clia             coi              con            
+ctia             cu               cua              cuc              cudc           
+d                d6               d6ng             da               dac            
+daiv             dao              dau              day              ddi            
+di               doan             doc              don              dong           
+dp               dua              duac             dudi             dudng          
+dugc             duge             dung             duoc             em             
+future           gan              gia              giau             gid            
+gidi             gido             gitip            giup             global         
+gui              hanh             hdi              hgp              hi             
+hinh             hoan             hoat             hoc              hon            
+hop              hu               hudng            huy              huynh          
+k                khoa             ki               kinh             la             
+lai              lam              li               linh             lives          
+loi              luan             luc              luy              lwa            
+m6n              mdi              moi              mong             mudi           
+nang             nay              ndi              ngay             ngft           
+nghe             nghi             ngif             ngoai            ngt            
+ngtf             ngudi            nham             nhan             nhau           
+nhom             nhting           noi              nudc             our            
+ph               phap             phat             phu              qua            
+quan             quanh            rat              s6ng             sach           
+sau              sinh             soan             society          song           
+su               success          sung             t6               ta             
+tac              tam              tao              tap              tdc            
+tham             thang            thanh            thdi             theme          
+theo             theoth6ng        thi              thong            thtic          
+thuat            thuc             thuic            thutc            ti             
+tich             tinh             tldp             topic            tr             
+tri              trinh            tro              trong            tru            
+trung            tt               tu32             tudi             tuong          
+u                ung              va               vai              vao            
+vdi              vuc              vung             xa               xoay           
+
+Page 4 - 71 new unique words:
+--------------------------------------------------
+about            activities       adjective        aia              begoingto      
+benefits         bg               blends           children         cishones       
+club             compound         consonant        continuous       development    
+doing            ed               family           famous           fe             
+ful              gerundsang       gr               grammar          green          
+housework        human            ideas            infinitives      information    
+ing              invention        kt               less             life           
+living           main             nouns            or               past           
+perfect          phrases          pl               present          pronunciation  
+reading          related          same             scvavolcs        sentences      
+show             simple           specific         spelling         sss            
+stine            stress           suffixes         syllable         text           
+three            tv               two              vocabulary       volunteer      
+vs               whenand          while            will             with           
+words          
+
+Page 5 - 74 new unique words:
+--------------------------------------------------
+advice           announcement     another          application      asking         
+at               blog             carbon           chau             classroom      
+clil             collecting       computer         countries        country        
+creating         culture          english          event            everyday       
+existing         experiences      explaining       expressing       feelings       
+festival         footprint        gist             giving           go             
+hardware         how              improve          ina              inan           
+instructions     interview        inthe            letter           listening      
+live             making           one              opinions         organisation   
+other            planning         project          requests         research       
+responding       routines         save             should           shouldn        
+singing          speaking         suggestions      talk             talking        
+tdo              their            traditional      uk               use            
+uses             values           volunteering     volunteers       weekend        
+why              work             writing          your           
+
+Page 6 - 39 new unique words:
+--------------------------------------------------
+adjectives       brochure         clauses          comparative      conditional    
+defining         different        ecotours         education        environmental  
+face             intonation       it               learning         modals         
+more             non              ny               online           passive        
+problems         protect          relative         reported         rhythm         
+sentence         speech           superlative      support          syllables      
+than             that             type             unicef           verbs          
+voice            which            who              whose          
+
+Page 7 - 55 new unique words:
+--------------------------------------------------
+aconversation    advantages       advertisement    agreement        animals        
+apologies        attraction       become           blended          career         
+choices          class            communities      conversation     delta          
+designing        devices          disadvantages    disagreement     earth          
+ecotour          ecotourist       ecotourists      electronic       endangered     
+fao              find             first            football         guide          
+hour             impact           invitations      its              jobs           
+local            mekong           men              modern           out            
+participation    prepare          programmes       schools          solutions      
+space            students         survey           tour             tourism        
+website          welcoming        wildlife         woman            women          
+
+Page 8 - 108 new unique words:
+--------------------------------------------------
+afraid           ai               also             anus             anyway         
+are              bosoms           br               breadwinner      busy           
+but              bye              can              cars             chores         
+cleans           communication    cook             cooking          cooks          
+dad              dinner           divide           does             doesn          
+earns            eny              equally          evening          exams          
+fair             few              field            free             friends        
+fun              going            groceries        have             heavy          
+hello            help             helps            her              homemaker      
+house            household        ian              if               includes       
+is               job              join             kids             kr             
+lan              late             later            laundry          lf             
+lifting          listen           love             ls               mamgvage       
+minh             money            mother           mum              my             
+never            now              oas              often            oh             
+ol               ot               play             preparing        put            
+raeonty          read             really           resent           rubbish        
+school           she              shops            sister           skills         
+so               sounds           sports           study            studying       
+te               this             today            up               us             
+usually          washing          well             what             when           
+working          yes              you            
+
+Page 9 - 59 new unique words:
+--------------------------------------------------
+44               again            attention        bb               brackets       
+brain            bread            breakfast        brown            brush          
+circle           complete         correct          crane            crash          
+cream            create           cs               decide           df             
+doessome         ene              esceienctc       everybody        fall           
+false            following        forms            from             fy             
+hear             ial              id               ieee             jane           
+language         me               ned              noun             oa             
+oun              pay              phrasal          ray              repeat         
+sfamily          statements       tes              track            train          
+trash            tread            tree             true             used           
+was              whether          write            yy             
+
+Page 10 - 78 new unique words:
+--------------------------------------------------
+after            agree            answer           aperson          around         
+choose           city             cleaning         clothes          dee            
+each             eee              ei               eldest           enough         
+etc              every            example          except           ey             
+fami             food             form             goods            habits         
+hanna            happening        has              hates            his            
+home             ise              isn              know             lewis          
+like             lived            look             manages          match          
+meanings         moiher           moment           mr               mrs            
+na               need             note             office           ora            
+phone            puts             putting          ree              regularly      
+remember         rk               seay             shop             someone        
+son              sos              stative          stays            still          
+strong           studies          supermarket      tense            things         
+time             twice            using            verb             want           
+week             whenever         wife           
+
+Page 11 - 105 new unique words:
+--------------------------------------------------
+4a               addition         aid              all              allin          
+among            apeaee           appreciate       appropriate      aril           
+ask              being            between          bonds            boringand      
+bring            build            cannot           care             character      
+close            common           connections      de               develop        
+difficult        duty             encourage        enjoy            even           
+families         feel             feeling          finish           fs             
+fully            good             grateful         gratitude        great          
+gy               happy            hard             highlighted      hobby          
+houseworkis      however          imeeo            important        interests      
+jw               lot              make             makes            many           
+members          moments          most             mothers          not            
+onal             only             ont              others           own            
+pairs            parents          people           person           picture        
+pt               q                qualities        questions        responsibility 
+rest             roi              sameras          seerenginen      share          
+sharing          si               something        special          start          
+stronger         take             taking           tasks            teach          
+teaches          team             them             therefore        these          
+they             think            though           tick             together       
+try              whole            wives            wx               young          
+
+Page 12 - 55 new unique words:
+--------------------------------------------------
+11               add              al               ally             anna           
+answers          basic            be               because          below          
+both             break            cee              check            column         
+conversations    damage           discuss          dt               enefits        
+exchanging       fea              get              given            groups         
+grow             homework         iii              ions             itis           
+itp              iv               ji               may              much           
+nate             nec              playtime         plenty           question       
+reasons          red              sic              some             sow            
+sr               strengthen       thank            then             tien           
+tn               too              useful           very             yc             
+
+Page 13 - 54 new unique words:
+--------------------------------------------------
+13               aaa              aba              above            achieve        
+ake              always           ar               assnt            atoctosnarotstennsdeansatotatantesie
+best             bones            brother          carry            cheer          
+conk             cy               eleven           esanesnchoahsnasransonl  famity         
+feast            fon              friend           ga               give           
+hieu             him              introduction     itermememnenermternrnernnnennemnneriiemanientnientnien  needs          
+niesnemennemttemntentnientitnesitumesnumnsnemnsiemsitemnniemniennennennirantenntentninnrmentnryirnei  nny              nti              ocate            oy             
+penncnsdbecnooncbahe  physics          r4               recording        rh             
+rine             rl               sae              shares           spend          
+strength         student          there            trust            ut             
+v2               vat              wa               word           
+
+Page 14 - 77 new unique words:
+--------------------------------------------------
+14               according        agame            ao1              asked          
+back             birthdays        bk               celebrating      choice         
+chooses          clean            com              daily            dbe            
+dinners          dl               email            en               end            
+eve              favourite        fete             friday           game           
+ged              getting          grandparents     guess            havingapicnic  
+havingdinner     ia               iith             ij               im             
+interested       ith              iy               joey             laows          
+last             latest           list             ll               mae            
+message          news             ones             peop             personal       
+pictures         please           proud            quite            saturday       
+second           sf               similar          since            sl             
+soon             spotlessly       subject          table            teh            
+tell             thehouse         third            ug               vane           
+visiting         vo               watch            watching         webmail        
+weeks            wher           
+
+Page 15 - 66 new unique words:
+--------------------------------------------------
+16               a0timove         ale              alll             aueniaaiinamaamms
+believe          bis              box              coc              doubt          
+dsbs             eat              eon              exchange         exp            
+expressions      film             fine             fossing          gd             
+grades           guys             hat              here             icc            
+inetddd          into             iogenet          laaws            let            
+lunch            mean             month            nda              no             
+noodles          number           oc               ork              pea            
+peetecectotoctoooootoscsocooococosocoocosioc  pid              plans            polis            practise       
+reass            reer             right            sa               saw            
+snacks           strongly         studyin          sunday           suppose        
+sure             teenagers        top              tos              tu             
+universities     usew             vii              visit            wishes         
+yaa            
+
+Page 16 - 78 new unique words:
+--------------------------------------------------
+21st             410              age              anfter           anumber        
+athe             away             borrow           british          broke          
+business         car              ced              century          changed        
+clear            coming           corresponding    could            crab           
+crashed          dirty            early            enjoys           err            
+evenings         eyo              father           feels            fifth          
+five             follow           fourth           greatly          having         
+helping          honest           iauiery          ice              jack           
+leg              likes            lm               looking          machine        
+man              manners          meeee            mel              mistake        
+nowadays         older            omeqrentiachos   passed           polices        
+pp               pudding          recent           remembering      respect        
+respecting       respectively     results          rrr              say            
+sda              sess             soup             sy               taught         
+teele            tracy            truth            truthful         untidy         
+value            vietnamese       wealth         
+
+Page 17 - 24 new unique words:
+--------------------------------------------------
+17               ak               amily            celebrate        celebrated     
+correctly        diy              doresearch       dy               explain        
+express          findings         gana             group            happens        
+hn               include          isolation        presentation     pronounce      
+understand       wes              where            world          
+
+Page 18 - 44 new unique words:
+--------------------------------------------------
+aa               able             adopt            aim              anon           
+area             attend           awareness        bf               cur            
+events           fext             fk               greener          gt             
+hope             interesting      issues           keen             kl             
+lifestyle        meas             meeting          mie              mike           
+ofa              ok               organise         place            planned        
+pr               raise            reduce           salaeanal        set            
+started          thing            un               union            vdies          
+wave             welcomes         yet              youth          
+
+Page 19 - 40 new unique words:
+--------------------------------------------------
+19               22               a2               aacub            apcdoe         
+based            ceremony         classrooms       clul             created        
+dans             eeereanonaa      eh               frase            gree           
+hel              ip               iq               leant            ma             
+nani             nas              nn               p3               playground     
+pleased          plot             practising       protection       qa             
+qh               reeser           rf               saying           sbby           
+sez              shee             suitable         thinks           weal           
+
+Page 20 - 52 new unique words:
+--------------------------------------------------
+20               actions          already          amount           appliances     
+attract          beautiful        before           buy              changes        
+chinese          clouds           come             competition      dark           
+decision         dioxide          driving          exam             exhibitions    
+final            fo               forgot           ground           heat           
+looks            machines         made             models           nearby         
+next             off              pass             pick             power          
+predictions      produce          produced         providing        rain           
+reminded         reservation      restaurant       revise           shirt          
+small            sources          sun              tomorrow         tonight        
+turn             win            
+
+Page 21 - 61 new unique words:
+--------------------------------------------------
+1118             21               aan              action           agreenlifestyile
+aide             alls             alot             baily            begin          
+bes              bins             cleaned          didn             discussed      
+doer             er               eter             eww              focus          
+fvs              g1               ger              gh               hb             
+ho               il               itself           jt               known          
+m168             malate           mew              moree            neda           
+neighbourhood    ns               oar              oars             orn            
+pan              pares            party            pit              plant          
+rewrite          rg               riot             ro               sats           
+sh               shown            slsr             sts              trees          
+vesa             wak              wea              wi               workin         
+yesterday      
+
+Page 22 - 91 new unique words:
+--------------------------------------------------
+along            andrecycle       animal           bag              bills          
+bottle           bottled          bottles          bringing         buying         
+catt             causing          ce               change           chemicals      
+collect          compulsory       cutting          dangerous        down           
+dowrten          easiest          easy             eco              electrical     
+encouraged       energy           explosion        fire             friendly       
+grown            harmful          healthier        idea             iiensaocep     
+instead          items            just             lin              little         
+materials        methods          natural          notin            opening        
+opinion          organic          organs           paragraph        part           
+pieces           plastic          pollution        possible         prevent        
+prevents         products         protects         ratufalfesoufces  raw            
+recycling        reduces          reducing         refillable       represents     
+resource         reusable         reusing          rusting          safer          
+sel              shopping         siac             situations       sort           
+sours            such             supporting       susstainable     sustainable    
+takes            tastes           through          throw            title          
+turning          waste            water            way              without        
+years          
+
+Page 23 - 35 new unique words:
+--------------------------------------------------
+aiir             ao               bags             creates          cscs           
+drop             dropping         eel              electricity      fresh          
+leaving          litter           m2               material         mf             
+pollute          polluted         presents         prning           provide        
+recycle          resources        ria              shade            shouldnt       
+soos             sst              st               street           tees           
+tram             vv               wastes           wee              yo             
+
+Page 24 - 28 new unique words:
+--------------------------------------------------
+24               3s               4s               ab               ad             
+aot              areport          bek              ccllect          central        
+flowers          gap              hier             iia              ithe           
+lenin            market           media            partintheevent   photos         
+pts              ranation         sealed           speaker          talks          
+teams            tew              uly            
+
+Page 25 - 55 new unique words:
+--------------------------------------------------
+1g               25               aad              ace              advise         
+allso            areas            avse             bcd              beto           
+big              blanks           books            bus              cleanand       
+climate          conclusion       det              difference       ercoures       
+euhilme          everyone         expected         fia              fill           
+fvx              improving        incomplete       ines             internet       
+keep             keeps            library          maa              mai            
+meiodc           organising       oublic           parks            places         
+planting         ractise          safe             search           seseuesveseusseseseseeveseveasrssseesessneevaversuesaneevsensasieseaneneeeees
+setting          spoilt           stations         theairclean      ven            
+vnc              wechweeyoa       weekends         were             would          
+
+Page 26 - 90 new unique words:
+--------------------------------------------------
+47               aerate           air              alking           although       
+ann              atmosphere       average          aye              bull           
+button           calculating      carr             cause            cdi            
+click            clr              colpenieeraint   congratulations  contest        
+cut              cycle            defini           destroy          doit           
+drive            ducoit           emissions        enearericils     estimate       
+etreots          eyaing           fly              fouals           frien          
+gases            globally         grass            greenhouse       growing        
+gzeiid           heavily          holiday          hot              houses         
+increasing       largecarbon      ld               lead             member         
+motorbike        muchas           needed           nition           ong            
+ov               per              planes           planted          prize          
+professor        public           rae              ricucteeniar     scmmurstic     
+sec              serious          shorter          showers          south          
+sry              temperatures     test             those            thunder        
+tons             total            toy              transport        travel         
+ua               underline        usage            vill             walk           
+ware             wind             won              worry            year           
+
+Page 27 - 17 new unique words:
+--------------------------------------------------
+activity         aetivity         caen             cleaner          during         
+eb               expectedresut    fora             fvu              morning        
+park             paths            picking          plan             reason         
+suggest          willand        
+
+Page 28 - 53 new unique words:
+--------------------------------------------------
+118              artist           awards           bare             billboard      
+bishunciation    couniry          couple           cover            did            
+drums            ew               fan              fr               goto           
+grammy           guitar           himself          i4               idol           
+ig               instruments      io               jo               learnt         
+months           musical          must             performed        piano          
+pop              popular          received         season           several        
+singer           social           star             talented         teen           
+teenager         tela             theatre          tourist          town           
+trumpet          upload           videos           within           wnen           
+wy               yeah             yep            
+
+Page 29 - 32 new unique words:
+--------------------------------------------------
+20d              29               449              amazing          billion        
+bold             careful          comments         erd              etic           
+fans             friendship       helped           isa              ket            
+mark             parts            perform          pred             programme      
+reached          refer            relax            sable            sd             
+songs            stressed         sub              tips             tress          
+uage             views          
+
+Page 30 - 72 new unique words:
+--------------------------------------------------
+1960s            1am              30               abil             adj            
+arate            aritsisttecided  asleep           attracted        audience       
+bad              band             birthday         boring           bya            
+charity          competitio       concert          conjunction      conjunctions   
+consists         coordinating     dance            decided          decides        
+delay            due              expect           followed         fomous         
+happen           heard            hesitate         independent      infinitive     
+interest         invited          jackson          jazz             joined         
+judge            ler              liste            maths            million        
+mu               musician         nice             notice           ord            
+outdoor          performance      promise          raining          send           
+shows            sing             single           sitheir          stadium        
+stayed           style            surprise         talent           ticket         
+tickets          wants            weather          went             whi            
+worus            yall           
+
+Page 31 - 57 new unique words:
+--------------------------------------------------
+2002             2007             america          american         arguments      
+aset             becomes          chosen           competitions     eliminated     
+exciting         finals           four             hollywood        identify       
+ido              included         islands          january          jj             
+judges           lowest           messaging        movies           naariea        
+night            onwards          ordinary         over             participants   
+performances     preferred        prograrnmes      puerto           radio          
+reality          receive          removed          rico             role           
+round            seasons          semi             series           short          
+singers          six              stages           television       thirty         
+twenty           vietnam          virgin           vote             votes          
+winner           winners        
+
+Page 32 - 49 new unique words:
+--------------------------------------------------
+32               acd              aed              ah               americaniidol  
+artists          atv              audiences        bap              careers        
+cash             choosing         cin              cnenn            dancing        
+dress            eaki             eeminesiemmens   etmse            favour         
+guest            highest          ies              inferred         jig            
+jseful           kn               meee             mentioned        nags           
+name             nes              notes            participate      points         
+reetows          remain           rn               runners          score          
+scores           snow             spar             stage            tha            
+tknow            todo             tove             wins           
+
+Page 33 - 64 new unique words:
+--------------------------------------------------
+422              ahaa             ant              aoe              ape            
+babe             bact             beach            bei              bigger         
+cael             cente            chance           cool             el             
+emia             enjoying         excited          experience       felt           
+festiva          fin              finn             finshed          forenoon       
+greatest         had              hearm            held             hits           
+iad              idols            iis              ine              kind           
+korea            lata             loggin           mexico           nei            
+nmimrnennnmimieni  nr               oi               ono              onthe          
+organisers       parkisfarfromthe  poe              preparations     rif            
+ror              selling          shared           sie              srmnominanorsiimnennemnnmamannenan
+sse              suchas           thailand         tie              tig            
+took             ui               usic             yummy          
+
+Page 34 - 23 new unique words:
+--------------------------------------------------
+120              34               airy             andy             armaang        
+art              arts             bc               centre           columns        
+cou              dlove            fireworks        games            hid            
+imagine          lio              location         oan              relaxed        
+shall            wonderful        wow            
+
+Page 35 - 56 new unique words:
+--------------------------------------------------
+16th             35               act              ance             ancient        
+bamboo           belts            chanting         clappers         colours        
+combines         cong             costumes         cw               depends        
+drum             ervigin          fx               gods             gong           
+hats             hau              heroes           including        j3             
+jy               lef              lute             mese             mind           
+moon             national         northern         nw               origin         
+partner          passage          performers       praise           psychic        
+qq               rank             recognised       region           rules          
+saints           shaped           slow             spread           tho            
+toben            types            typical          vansinging       wata           
+worship        
+
+Page 36 - 19 new unique words:
+--------------------------------------------------
+36               concerts         deep             eight            expensive      
+fourteen         gatherings       hours            instrument       korean         
+liked            participated     relaxing         revealed         said           
+stay             surprising       traffic          writes         
+
+Page 37 - 27 new unique words:
+--------------------------------------------------
+37               abst             cas              etl              gil            
+iahalhaaaieaeenielias  iat              ih               ky               lll            
+moueer           noman            nore             o4               ona            
+oui              papa             ppl              pre              pree           
+respond          sbadbetndm       sot              sp               um             
+vou              xoan           
+
+Page 38 - 13 new unique words:
+--------------------------------------------------
+15               38               apopular         cartoon          clapppeed      
+finished         footprints       ios              isit             minutes        
+neighboumood     playing          trying         
+
+Page 39 - 23 new unique words:
+--------------------------------------------------
+39               allthe           batteries        bn               course         
+fake             fee              gcp2             glass            metal          
+millions         mle              o35              paper            qs             
+responsibilities  seo              times            tnow             turned         
+unwanted         wanted           yso            
+
+Page 40 - 38 new unique words:
+--------------------------------------------------
+album            allow            anew             became           born           
+collected        conditions       container        crossword        death          
+died             drinking         drops            dry              essential      
+evenin           excellent        facts            general          hit            
+i279             involves         lire             method           plants         
+presley          quick            rainwater        releases         roof           
+seg              sent             singles          source           storing        
+technology       tiny             works          
+
+Page 41 - 35 new unique words:
+--------------------------------------------------
+4tel             acct             across           ade              breathe        
+colour           ear              ec               ede              ees            
+eg               falls            gues             ibge             key            
+light            liquid           lo               mixture          nag            
+pas              psi              rake             recacs           regular        
+rey              silt             smell            soe              surrounding    
+tf               ths              tnere            tw               vere           
+
+Page 42 - 55 new unique words:
+--------------------------------------------------
+42               8b               aeieutiee        applied          apply          
+ass              baer             bais             boost            came           
+cl               coe              coh              confidence       cos            
+een              endless          esas             fivecdes         girases        
+involved         luck             mde              neale            neste          
+norbord          nt               nwr              nx               om             
+once             opportunities    organised        orphanage        pi             
+plas             problem          ps               ronunc           satio          
+service          sir              sires            successful       summer         
+thanks           tine             vats             vocabuory        wba            
+weren            wiih             wiwosichie       wore             xh             
+
+Page 43 - 49 new unique words:
+--------------------------------------------------
+43               a4               aly              aminctease       businesses     
+cord             crease           daing            desciicing       describing     
+donations        eworcertte       ex               export           ft             
+fuk              got              hen              i254             ib             
+ihe              increase         ited             je               kin            
+nee              nouse            ob               orpecbls         othe           
+phices           phrase           port             rales            record         
+sale             sas              shar             smee             sn             
+tecord           thas             tin              visitor          voor           
+wanna            willl            ws               yh             
+
+Page 44 - 65 new unique words:
+--------------------------------------------------
+1s               aaaeaiene        advert           aes              article        
+beinc            called           careless         civics           combine        
+couldn           countryside      donate           eib              einai          
+employmen        eye              far              floods           found          
+freely           geg              generous         governmental     head           
+hopeful          hopeless         ill              interrupted      iob            
+isaw             lim              limewesescrchiratorenoiowmert  located          longer         
+lotot            maich            metan            mor              ople           
+paice            paid             poor             position         progress       
+realised         remote           revising         rie              rte            
+seam             searching        sorting          streets          telling        
+tochgiy          told             tor              unhappy          vilge          
+villages         willing          withiheirmeanings  worked           wv             
+
+Page 45 - 50 new unique words:
+--------------------------------------------------
+45               afterschool      ago              aul              bank           
+benefit          blankets         delivering       faised           fifteen        
+flooded          formed           gain             handmade         hardships      
+history          homeless         hundred          hy               larry          
+long             m4               meals            meet             notebooks      
+objects          offers           old              oma              organises      
+purpose          raising          secondary        sense            shortly        
+sorneone         suffering        teens            thankful         thy            
+unused           ures             various          vnd              voluntary      
+vowwntt          warm             wouw             writer           wu             
+
+Page 46 - 28 new unique words:
+--------------------------------------------------
+46               appreciating     basvale          boo              canvolunteeratthe
+clubmemberscanalsohelo  contact          details          diagram          examples       
+finally          fromselingj      gaining          hie              instance       
+itemsisusedtobuilld  j5               longafterthe     management       miu            
+orphans          orthe            porte            reg              scans          
+usefulexpressions  volunteerclubwassetud  wasopened      
+
+Page 47 - 39 new unique words:
+--------------------------------------------------
+452              adrarl           avant            aw               ccna           
+citycentre       courses          deadline         experienced      fam            
+forthe           gb               helpful          helpspeople      hes            
+ist              meena            mim              mit              mote           
+network          onlypoorpeoplecanget  pik              positions        profit         
+pvt              py               sc               sees             sten           
+supports         trained          training         vb               wal            
+wan              weekdays         willbe           willonly       
+
+Page 48 - 47 new unique words:
+--------------------------------------------------
+187              48               aeeeee           afternoons       aims           
+applying         ares             available        boson            charitable     
+currently        dear             duties           eres             essere         
+faithfully       filled           forward          giang            haat           
+hearing          heart            immediately      issss            madam          
+mentioning       monday           nteei            occt             offer          
+opportunity      paragraphs       projects         reiss            requested      
+restrr           sager            services         seteeeeeeeeesees  shae           
+sreses           sruscerawececsesees  weavers          weekday          weer           
+yolu             yours          
+
+Page 49 - 42 new unique words:
+--------------------------------------------------
+1919             1990             435              49               50             
+access           appreciated      ase              beal             bit            
+case             cheerful         chilare          childrenstarted  confident      
+confused         digital          disappointed     ease             everything     
+firstl           focuses          kingdom          knew             mountains      
+nothing          particularly     piva             practical        provides       
+s0               saving           sj               teachers         teaching       
+trip             united           upset            uyrviaa          vek            
+wet              worried        
+
+Page 50 - 20 new unique words:
+--------------------------------------------------
+454              arrive           communiity       crying           days           
+deliver          ental            excite           gaps             girl           
+governm          import           near             poverty          report         
+stop             supported        tthe             verna            visitors       
+
+Page 51 - 12 new unique words:
+--------------------------------------------------
+51               atthy            carried          factual          hoe            
+proj             tc               uf               vapi             viv            
+vutguul          yr             
+
+Page 52 - 36 new unique words:
+--------------------------------------------------
+52               actually         allowed          apps             been           
+classmates       communicate      completely       convenient       cree           
+dene             dr               educational      either           eneiiion       
+faster           hmm              ighicrthn        imenio           improved       
+invented         laptop           laptops          learners         mnotsure       
+perhaps          phong            rvaryaayieng     saved            sb             
+smartphone       smartphones      tcor             teacher          tet            
+valuable       
+
+Page 53 - 45 new unique words:
+--------------------------------------------------
+3rifitea         437              afternoon        agen             ais            
+attica           au               bie              bl               blisten        
+bzgu             ccontuy          chocolate        connect          cross          
+ctamiy           discussing       edvantage        ek               fi             
+fillineach       fiv              gm               grandfather      h              
+intemet          lj               lt               lua              odn            
+pattern          pie              ptopwm           qw               ratte          
+river            sesale           summary          tami             traction       
+ute              uu               uv               vvw              ze             
+
+Page 54 - 53 new unique words:
+--------------------------------------------------
+0989             127              4nfinitives      54               angry          
+avoid            bd               cg               completed        door           
+eneensenencenscnnn  epiqument        exiaeruenr       experiment       fa             
+feantinives      gerund           gerunds          glossary         gu             
+happened         hate             hdraware         letters          lg             
+limeh            lobaratory       lon              lost             nae            
+nema             o66              o8b              open             ores           
+participle       pcr              po               qels             recently       
+rue              sal              scines           semen            solution       
+sometimes        starting         stofware         subjects         underlined     
+unscramble       unvgisty         xample         
+
+Page 55 - 49 new unique words:
+--------------------------------------------------
+2000             202              20th             55               alhelpstomake  
+alin             alis             amazed           artificial       asimo          
+chatbots         cleaners         copy             customers        drivers        
+effective        emotions         fas              flights          furniture      
+fva              holidays         honda            hotels           ike            
+intelligence     laaiventions     lenthat          measure          named          
+nia              pai              recognise        robot            robots         
+room             route            size             software         sop            
+sophia           sophiacanshowemotions  sox              spa              stairs         
+travelling       vacuum           walking          zz             
+
+Page 56 - 20 new unique words:
+--------------------------------------------------
+56               andread          communicating    control          dimensional    
+distances        effectively      ever             hp               ken            
+mare             oat              outline          sth              stn            
+store            texts            wie              wl               ywle           
+
+Page 57 - 30 new unique words:
+--------------------------------------------------
+438              57               battery          beaks            blank          
+buttons          carefully        charge           device           gevice         
+gp               iar              jaqn             labelling        low            
+mobile           nk               pn               predict          press          
+pressing         remove           robovacuum       rp               seconds        
+stain            timer            tis              wipe             wrong          
+
+Page 58 - 27 new unique words:
+--------------------------------------------------
+150              58               awrmedine        certainly        chose          
+describe         draw             explanation      foe              further        
+iil              ila              itt              languages        meaning        
+oes              pesre            prompts          quickly          recommend      
+routes           sme              tab              tec              telephones     
+tg               wr             
+
+Page 59 - 35 new unique words:
+--------------------------------------------------
+59               alook            assistant        atit             bey            
+certainty        cheap            controls         decisions        displayed      
+documents        dont             ghz              gigabytes        gigahertz      
+high             jaa              means            memory           powerful       
+probiem          processor        processors       ram              random         
+rdwa             run              screen           sea              speed          
+storage          tim              understanding    v5               weight         
+
+Page 60 - 38 new unique words:
+--------------------------------------------------
+000              a1               advantage        advertisements   allows         
+atthe            bob              cge              combusiness      comoffice      
+compro           computers        designer         designs          distance       
+dram             fees             fit              fol              gg             
+installed        large            meh              mes              nne            
+ols              orount           owe              prefer           qe             
+qeeas            revi             slorage          solve            stess          
+threesyllable    ttt              vad            
+
+Page 61 - 12 new unique words:
+--------------------------------------------------
+08               61               classroop        fer              fll            
+mn               pes              presenting       soien            sons           
+v3               ver            
+
+Page 62 - 10 new unique words:
+--------------------------------------------------
+aang             anywhere         commu            connecting       done           
+escape           ln               maze             missing          telephone      
+
+Page 63 - 56 new unique words:
+--------------------------------------------------
+1905             63               accident         accj             alexander      
+apple            apples           bnet             cold             dent           
+discover         discovered       discoveries      discovering      discovery      
+doctors          drink            du               epperson         experiments    
+extra            falling          fell             finding          fleming        
+frank            froze            gravity          inside           isaac          
+jnventions       laboratory       law              left             mmm            
+newton           oq               outside          penicillin       popsicles      
+probably         rees             result           sacs             sat            
+scientists       sin              sitting          soft             stick          
+straight         toysseem         under            whenhe           window         
+wooden         
+
+Page 64 - 34 new unique words:
+--------------------------------------------------
+a3               allowg           annenensegquna   autnevnmessenemanensmmnmnit  breaks         
+controlled       doors            enable           features         forced         
+heating          homes            hts              lig              ling           
+mountainous      ons              popularity       punishment       rings          
+salen            sammameseanensnente  selfl            semnmumesees     seseseasanescanmnaesuneacennste
+sime             smart            snestusenstene   system           temperature    
+themselves       ties             truly            windows        
+
+Page 65 - 14 new unique words:
+--------------------------------------------------
+65               anything         caring           cececeeeseseseseeesueneeenenes  decause        
+developing       fond             jod              mainly           ready          
+return           richer           selfiess         selfless       
+
+Page 66 - 50 new unique words:
+--------------------------------------------------
+448              66               abs              adorable         aie            
+airline          ave              boys             camp             ccs            
+cousin           cue              dream            eats             ecc            
+equal            exercising       fantastic        fitness          focusing       
+full             gc               gi               girls            joos           
+js               judes            kept             kindergarten     ks             
+lae              lat              linda            lucky            medical        
+mise             mustn            nemes            pilot            pilots         
+plt              pnivenions       qt               rammar           real           
+surgeon          tca              treated          trips            ure            
+
+Page 67 - 32 new unique words:
+--------------------------------------------------
+46blisten        67               aged             ani              ans            
+behave           cals             cees             certain          ci             
+courage          deal             dreams           dsurgeon         dteated        
+fact             hospital         male             meaningful       mentalstrength 
+neny             opposite         physical         promote          requires       
+rights           roving           says             somebody         tastic         
+towards          velop          
+
+Page 68 - 25 new unique words:
+--------------------------------------------------
+68               april            bridge           built            classes        
+differently      engineers        fighter          force            governments    
+grandpa          guests           income           influenced       married        
+might            modal            offered          operation        ought          
+prepared         roles            rural            seen             surgeons       
+
+Page 69 - 42 new unique words:
+--------------------------------------------------
+69               assistants       birth            carries          challenges     
+child            daughters        developed        differences      earn           
+fewer            gives            half             health           heresies       
+higher           individuals      ja               likely           marriage       
+marry            nurses           oow              pace             paying         
+physically       promoted         risks            salaries         secondly       
+secretaries      seer             sm               tend             thirdly        
+tomen            unable           uneducated       victims          violence       
+wens             xe             
+
+Page 70 - 38 new unique words:
+--------------------------------------------------
+70               ability          ac               baat             beet           
+behaviour        brinch           domestic         educated         ehedie         
+exprestions      female           firefighters     flexible         fn             
+formal           fredniondiydoee  gentle           haan             hurt           
+intended         jany             jeet             lack             necessary      
+necis            nurse            nursing          peak             persuasion     
+pivico           pressure         suggested        taken            traditionally  
+wag              wnt              yee            
+
+Page 71 - 35 new unique words:
+--------------------------------------------------
+1963             23               bases            completing       cosmonauf      
+cosmonaut        degree           earthon          ere              examination    
+factory          flight           flying           june             nof            
+officer          parachutist      passing          pictureand       pra            
+returned         sor              soviet           ssao             successfully   
+t47blisten       tereshkova       ther             travelled        university     
+valentina        vf               vostok           worker           wosi           
+
+Page 72 - 27 new unique words:
+--------------------------------------------------
+72               abilities        anc              avg              comm           
+dut              explanations     eyes             gn               guiding        
+ka               kil              knowledge        menorwomen       mental         
+mentally         ners             oot              operations       patien         
+patients         performing       sued             teamwork         tiring         
+ual              xy             
+
+Page 73 - 44 new unique words:
+--------------------------------------------------
+1890s            1921             1971             1991             73             
+absolutely       asia             association      bani             becoming       
+besides          commonly         cup              disagree         drawn          
+england          factories        fifa             france           i490           
+lasted           lift             lifted           m6               mafraid        
+matches          msorry           netherlands      official         played         
+popslats         professional     recorded         sbanstart        scotland       
+significantly    sorry            sport            thought          timeline       
+until            war              worldwide        yeas           
+
+Page 74 - 14 new unique words:
+--------------------------------------------------
+74               adverts          candidate        continue         cosmonauts     
+fighting         ideal            isob             mention          nose           
+parachute        rebuild          safety           workplace      
+
+Page 75 - 10 new unique words:
+--------------------------------------------------
+75               ather            carmen           eje              jes            
+least            nbet             nowleann         sabes            simoni         
+
+Page 76 - 32 new unique words:
+--------------------------------------------------
+1945             1946             1965             1977             active         
+berens           closely          disadvantaged    expert           fund           
+gnitednations    goal             government       gre              harm           
+healthy          mns74            nations          natovis          ngan           
+oreohzation      peace            peacekeeping     senos            sta            
+technical        trade            tts              tut              undp           
+vee              vief           
+
+Page 77 - 56 new unique words:
+--------------------------------------------------
+1995             52blisten        53blisten        77               7s             
+alee             aoeuateg         attractive       beginning        cach           
+congia           countrieshavea   crresniser       dictionaries     economic       
+expla            foreign          gall             ghting           growth         
+heloina          ical             injury           invest           investors      
+isccewnares      largest          level            line             lowered        
+marked           nation           nomic            onantation       par            
+pation           poids            possoliity       primary          prors          
+raised           rhnerc           seaaveninges     seurecen         silifee        
+tici             tl               vertical         vist             vp             
+weaker           wf               wio              worntane         wto            
+zb             
+
+Page 78 - 63 new unique words:
+--------------------------------------------------
+78               aah              accept           acraenbatl       agit           
+asean            asian            ces              cheaper          china          
+coctons          coins            compare          competitive      cutts          
+designed         destinations     doidiod          dpi              easier         
+economies        economy          enter            eu               european       
+exot             festivals        geib             hepa             iets           
+ile              imported         inte             intends          joining        
+larger           les              locally          markets          mii            
+ncivics          ngs              och              okies            ond            
+organo           packaging        peoniges         picigch          poorly         
+previous         promised         quality          rear             signed         
+smaller          southeast        states           superlatives     supermarkets   
+torssis          wasn             yen            
+
+Page 79 - 19 new unique words:
+--------------------------------------------------
+1975             79               achievements     changing         connected      
+disabilities     fast             fields           leave            offering       
+ou               qualit           refuse           regional         reople         
+ri               succeed          uplice           usual          
+
+Page 80 - 15 new unique words:
+--------------------------------------------------
+6h               80               85               disabled         educating      
+gene             lara             nb               nera             nine           
+sol              uy               vaccinating      vaccines         whot           
+
+Page 81 - 12 new unique words:
+--------------------------------------------------
+55blisten        650              brings           isablisten       j7             
+namisa           neighbours       nen              officersto       relations      
+selected         village        
+
+Page 82 - 20 new unique words:
+--------------------------------------------------
+82               abroad           colleges         cultural         cultures       
+exchanges        experiencing     exports          facilitating     gained         
+greater          ifferent         imports          itisalso         promoting      
+scssfcor         tourists         tours            vir              writea         
+
+Page 83 - 18 new unique words:
+--------------------------------------------------
+83               delighted        elet             exhibition       gate           
+hh               informal         inv              invite           inviting       
+isep             maybe            nding            nm               pemaps         
+respc            tations          uc             
+
+Page 84 - 42 new unique words:
+--------------------------------------------------
+1978             84               a109             actively         adi            
+agricultural     agriculture      aupsermanecuaaceea  biggest          commit         
+coonmty          cusses           ect              eet              fac            
+financial        gus              hopes            hundreds         hunger         
+i57              italso           japan            levels           lias           
+mh               normal           nutrition        participant      pasev          
+production       provided         provider         reach            response       
+security         sia              standard         todevelop        tries          
+welcome          wwf            
+
+Page 85 - 10 new unique words:
+--------------------------------------------------
+airns            current          esa              isation          mowadays       
+narn             nowiann          oon              sars             wrawd          
+
+Page 86 - 17 new unique words:
+--------------------------------------------------
+ang              ba               eclass           fopic            geography      
+iss              lessons          nick             original         ots            
+sclacotil        tee              toninst          uploaded         video          
+warming          wish           
+
+Page 87 - 14 new unique words:
+--------------------------------------------------
+459              87               adverbs          avideo           cinema         
+content          emphasis         peter            stalled          tablet         
+uoioad           vising           wetalla          xam            
+
+Page 88 - 43 new unique words:
+--------------------------------------------------
+88               anytime          app              begins           bisncded       
+bm               boy              clause           commas           directly       
+doctor           edcn             explains         facing           gave           
+gocior           ich              impressive       instruction      interne        
+lent             mb               mecimngs         middle           mine           
+nits             ocdiilaemaiaen   omer             otmous           placed         
+presentations    pronoun          recorders        sian             smith          
+speer            strategy         theboy           togeier          uncle          
+visited          vre              youneeda       
+
+Page 89 - 26 new unique words:
+--------------------------------------------------
+89               board            bog              connection       dhe            
+disadvantage     discussion       distractions     eec              familiar       
+focused          furthermore      gat              iz               laura          
+learna           m8               mv               photo            reply          
+schoolis         seat             ses              strategies       wait           
+ym             
+
+Page 90 - 20 new unique words:
+--------------------------------------------------
+90               against          backache         categories       category       
+classmate        direct           discussions      emails           evidence       
+front            gains            hm               lear             mentions       
+sai              schedule         side             sightedness      sit            
+
+Page 91 - 14 new unique words:
+--------------------------------------------------
+4608             91               account          articles         bree           
+chart            flow             folder           iwee             lesson         
+log              newspaper        ter              textbooks      
+
+Page 92 - 5 new unique words:
+--------------------------------------------------
+92               cieminimtsiihininjngiihiiigmiinhmepeeiminhhimiiipnninmdnincieminnimtcsomintnii  enables          ssssaal          tests          
+
+Page 93 - 23 new unique words:
+--------------------------------------------------
+93               audio            camps            challenge        download       
+environments     feature          hospitals        icon             industry       
+install          landmarks        lifelong         locations        museums        
+point            process          responsible      speak            task           
+te2b             unfamiliar       visual         
+
+Page 94 - 17 new unique words:
+--------------------------------------------------
+award            eiu              gor              gye              ic3b           
+irera            ity              names            nand             popu           
+serirgnies       sienna           sses             theapp           wen            
+yourcan          zt             
+
+Page 95 - 11 new unique words:
+--------------------------------------------------
+95               appropriately    asurvey          desktop          frequency      
+interaction      offen            purposes         relaxation       seal           
+tablets        
+
+Page 96 - 6 new unique words:
+--------------------------------------------------
+company          ducate           foce             ic4b             oreding        
+tradition      
+
+Page 97 - 8 new unique words:
+--------------------------------------------------
+5b               97               bought           creative         exercises      
+iced             lectures         websites       
+
+Page 98 - 26 new unique words:
+--------------------------------------------------
+acoach           assignments      cae              coach            coaches        
+ete              exactly          fh               fiji             flr            
+highly           hii              honour           island           kaitu          
+kitiana          nasinu           ncourage         onsidered        pacific        
+particular       reject           rugby            skilled          tool           
+trainer        
+
+Page 99 - 21 new unique words:
+--------------------------------------------------
+2th              3h               4b               99               ait            
+ama              atidpri          bala             bil              fale           
+females          ide              ir               males            pla            
+qualified        samobl           ted              uni              vig            
+yan            
+
+Page 100 - 14 new unique words:
+--------------------------------------------------
+als              cnintornctional  deforestation    environmenta     hg             
+is7b             isccl            nar              pol              range          
+starte           sz               tal              ya             
+
+Page 101 - 23 new unique words:
+--------------------------------------------------
+101              468              advised          dadiheh          dai            
+docu             eal              ealeceort        effort           eins           
+feed             hepeey           mageleng         mentary          oresentation   
+ose              pears            polar            rang             resting        
+sonoons          wade             zoo            
+
+Page 102 - 41 new unique words:
+--------------------------------------------------
+102              aar              aas              aat              affect         
+aro              aspect           balance          biodiversity     chi            
+cranes           ct               deen             depend           eaael          
+effects          else             erin             especially       gen            
+habitat          handed           howe             ifar             ked            
+mere             nc               nd               nnmen            omit           
+order            pli              pronouns         reporting        rmoronce       
+sis              tellsomeone      tenses           tuan             veh            
+wh             
+
+Page 103 - 44 new unique words:
+--------------------------------------------------
+103              220              aware            burning          cancer         
+catch            caused           clearing         coal             consequences   
+danger           disappear        diseases         ecosystems       eit            
+essay            explained        extreme          f9               fish           
+forests          habitats         heatwaves        hunt             illegally      
+kill             leads            loss             lung             major          
+mee              melting          nature           negative         respiratory    
+rise             rising           saan             soh              soil           
+tom              upsetting        vehicles         zzz            
+
+Page 104 - 17 new unique words:
+--------------------------------------------------
+104              causes           contains         damages          destroyed      
+disappearance    electric         fishing          hunting          illegal        
+introduce        laws             leaves           osystem          plastics       
+strict           wood           
+
+Page 105 - 11 new unique words:
+--------------------------------------------------
+105              concludes        finishing        firstly          gas            
+introducing      private          smoke            solved           thanking       
+willreduce     
+
+Page 106 - 55 new unique words:
+--------------------------------------------------
+06               1961             300              408              4696           
+andthe           avoiding         banning          baring           cd             
+destroying       ecm              eeeese           elephant         escnvennetsencabenese
+ese              fp               giant            gorilla          habba          
+helpin           i1               importance       indian           itaimstostop   
+kan              maithinks        maynotdestroy    mene             midterm        
+muchof           nambelevesthatiisgalhuning  noe              offie            originally     
+orobien          panda            planet           poise            prec           
+prevented        protectionof     punvrc           russ             saas           
+snonbesietbese   stand            supporters       survivalof       thatillegal    
+tortoise         tver             upin             widanimals       wide           
+
+Page 107 - 30 new unique words:
+--------------------------------------------------
+107              1993             335              7b               9g             
+africa           apologise        apology          assignment       conduct        
+die              douglas          earlier          eekly            elephants      
+excuse           experts          faprop           fthel            hamilton       
+jse              kine             lain             pressic          rt             
+stopping         submitting       theirwork        waiting          wos            
+
+Page 108 - 39 new unique words:
+--------------------------------------------------
+108              2009             2d               472              a5             
+acy              australia        body             call             cities         
+colder           disappearing     draws            encourages       ers            
+fed              file             lights           march            movement       
+odd              positive         promotes         redure           senin          
+soho             supporter        switching        sydney           territories    
+tigers           tionwide         towns            unnecessary      variety        
+vietnamin        viii             warmer           wild           
+
+Page 109 - 7 new unique words:
+--------------------------------------------------
+109              fa9              iliame           pandas           presentitto    
+researchers      setup          
+
+Page 110 - 61 new unique words:
+--------------------------------------------------
+anal             aneco            bam              bates            bau            
+begg             bub              cave             collection       dae            
+dap              deat             eatin            ele              explore        
+fieldirip        fieldtrip        fl               gane             gata           
+givingadvice     haa              haba             hanging          hooray         
+ht               ign              inn              lab              meg            
+mews             mom              nett             ofacave          oie            
+pasay            pf               piece            pro              province       
+rock             ron              s58              sear             sgatsone       
+spe              speakina         sps              srgh             stalactite     
+stalactites      steelaktart      sw               tali             thousands      
+touch            uae              vacaburary       wha              wt             
+yk             
+
+Page 111 - 17 new unique words:
+--------------------------------------------------
+2e               475              aec              aen              alk            
+bay              behind           bos              dou              goodidea       
+nts              packed           probe            terng            tone           
+uag              wouldn         
+
+Page 112 - 52 new unique words:
+--------------------------------------------------
+112              1e               1ge              afte             alive          
+ana              arsand           bird             cal              craftswome     
+dam              eam              educe            grandmother      gwar           
+i2               iacetas          ifitrains        ifmy             ildeacimaetal  
+imaginary        impossible       ive              ltellpeople      marks          
+neininenimeiimsiimimtanntnvinni  nell             pastsimple       pez              poi            
+protec           reinwechs        rere             res              rnin           
+rodu             saup             sien             ske              sores          
+stas             tain             tp               traditiona       trey           
+unlikely         usin             uty              vegetables       willstay       
+wouldtravel      younger        
+
+Page 113 - 53 new unique words:
+--------------------------------------------------
+113              3d               6am              8pm              9a             
+adult            aitican          andjump          andmore          aos            
+athree           barrier          beautifu         blue             boats          
+brochures        colo             coral            dive             documentaries  
+ener             eni              finth            giraffes         greet          
+hawaii           hippos           hoouiitil        iepeeole         kilometres     
+lions            localresearch    north            opentopjeep      price          
+program          protectit        reef             sapa             scstarts       
+soiie            souvenirs        starts           tae              tame           
+trekking         vara             watchthe         wednesday        whale          
+withus           youcan           zimbabwe       
+
+Page 114 - 20 new unique words:
+--------------------------------------------------
+114              aandc            bese             crafts           doe            
+ecoftourist      fuel             jeeps            mul              ppa            
+qvoid            statement        stel             toremind         trails         
+wep              wid              wp               yourself         zr             
+
+Page 115 - 27 new unique words:
+--------------------------------------------------
+115              ane              cai              cham             cooked         
+cratis           cratt            creas            eady             eect           
+eles             enj              fen              floating         host           
+hye              jh               littering        marker           meal           
+med              monon            stourr           sunshine         wateroky       
+weaving          xrte           
+
+Page 116 - 22 new unique words:
+--------------------------------------------------
+0929292929       0h               116              acs              aiceaaee       
+apes             eer              farm             fourists         gardens        
+herb             hoi              leisure          nf               recommended    
+swel             tbi              ues              usinesses        vegetable      
+vg               writin         
+
+Page 117 - 43 new unique words:
+--------------------------------------------------
+117              agua             ahs              ahve             boricua        
+cis              crowding         diving           educates         efforts        
+ej               emt              environmentally  equipment        fomorrow       
+hom              kinds            mass             neon             nereansvon     
+nicer            oem              pariner          ping             pogvics        
+profits          refers           relates          rests            rough          
+sar              scciacncn        sean             smokeless        sthy           
+surfing          tah              tens             travellers       wear           
+web              wilh             windy          
+
+Page 118 - 17 new unique words:
+--------------------------------------------------
+attracts         bor              craft            crowd            description    
+finland          lfl              mane             mipast           nave           
+negate           sollutian        staying          stresses         syoou          
+toursmontne      traditions     
+
+Page 119 - 13 new unique words:
+--------------------------------------------------
+119              aimee            ciggae           core             cues           
+design           gone             intonations      nip              ras            
+sama             saree            tene           
+
+Page 120 - 11 new unique words:
+--------------------------------------------------
+amajor           biology          boat             destruction      ecosystem      
+hasbeen          i79b             museum           orf              threats        
+user           
+
+Page 121 - 38 new unique words:
+--------------------------------------------------
+121              aer              anp              ara              ars            
+att              bate             btls             cate             cen            
+continues        denen            ech              fae              fag            
+hos              ko               nthe             oid              ome            
+op               oss              ote              paar             paes           
+paket            pasa             paty             pen              secretary      
+sre              stricter         survive          tea              ton            
+ul               var              xc             
+
+Page 122 - 19 new unique words:
+--------------------------------------------------
+600              attractions      bestia           bet              cgt            
+eetuine          gx               ied              oldest           pal            
+ral              reece            reviews          roadside         seeing         
+tale             taye             tod              vid            
+
+Page 123 - 16 new unique words:
+--------------------------------------------------
+123              beauty           disturb          doin             e0p            
+eto              farms            interact         interrupt        isto           
+leanings         patterns         produces         ride             tobe           
+visits         
+
+Page 124 - 71 new unique words:
+--------------------------------------------------
+124              1a               6fl              abbreviations    adv            
+adverb           aid6             ap               appliance        bat            
+benrfit          bredwina         brey             brlati           c6             
+cacbon           cachon           chan             cheerup          chon           
+ciing            deem1d3          dinh             dppt             ekemery        
+ewarenes         fotprint         gidt             grauseri         greetitjurd    
+hang             haummerka        hd               hevi             hod            
+intndri          irfttry          kee              keerakta         khong          
+manh             manner           nhi              pha              plarans        
+poten            preposition      r1               rabif            rac            
+routine          rudi             rur              sk               sponsa         
+spotlasli        stren            thiic            thudng           ting           
+tizn             ule              vac              veeljuz          vuil           
+vverb            vyi              wbj1n            weanas           xf             
+xt             
+
+Page 125 - 87 new unique words:
+--------------------------------------------------
+125              bambooclapper    beem             bu               budi           
+canes            cau              cng              comment          ctrang         
+d3ad3            dannguy          dat              decoration       deka           
+dia              eels             eliminate        emission         enad3i         
+facthdi          frendli          ftlabl           fu               gaentk         
+glavbl           hitu             iaiaald          icaimes          idi            
+ire              itkav            juzman           karid3           kerfn          
+khich            khuy             klaepa           kpment           lanv           
+larfstarl        laud             lav              limtnert         loai           
+loaira           lust             mang             mans             matttarial     
+mifn             mirdia           mitel            mjuzzikl         nanglugng      
+nferpt           nguy             nhac             pablik           phach          
+rerfn            rixtf            riz              savfl            sngl           
+sois             sternabl         t1               tai              tail           
+telantid         thai             thisinh          thot             toan           
+tramptt          treenspoit       trif             trstpant         tructigp       
+ustainable       ving             vlektrtkl        voi              wdc            
+z3               znstremant     
+
+Page 126 - 52 new unique words:
+--------------------------------------------------
+126              1n               bao              burst            cfu            
+chinh            ctfunan          d3enaras         dang             dav            
+davinert         donation         ekses            enang            fantd3         
+fjurzd           gop              hao              kaimjuznati      khacnhau       
+konfidens        laif             lanh             liva             maut           
+mjurnati         naunsmant        netfn            paz              phan           
+phdng            phi              phucvu           praekttkl        quy            
+refl             reiz             s3ivis           savtmene         setvin         
+sututin          tang             thamgia          thc              tisipeit       
+traitr           tta              vblan            veorias          vplvd          
+vui              x6i            
+
+Page 127 - 55 new unique words:
+--------------------------------------------------
+amen             batn             bio              boratari         diz            
+drarveles        driverless       dwea             earey            fij            
+geis             iks              kam              kerffa           kha            
+leep             memori           mjurnikert       nho              nowy           
+nut              pertmant         pin              pj               pjuzta         
+plat             prausesa         printing         printtn          raem           
+reader           reendam          rizda            sac              sjuxtabl       
+smartfaun        spels            spers            stern            stoirid3       
+stozl            svftwea          tay              telidgans        tete           
+tfazds           thinghi          thoai            tng              tur            
+umn              vars             veeljuabl        venfan           xach           
+
+Page 128 - 51 new unique words:
+--------------------------------------------------
+128              aoluc            atsart           canhtranh        chay           
+chifa            cone             ctu              demme            duhanh         
+dzan             ed3ukerttd       eyesight         farafarta        firefighter    
+ftzrkl           itkwal           kbzmanoit        kh               kindagaztn     
+kkam             mau              mentl            mesttk           muc            
+nan              ngh              nhay             nhnhan           patient        
+patlat           pcie             peerafurt        peerafurtist     petetiv        
+pfisa            phau             retfn            s3               sekratri       
+skilful          skrifl           smth             souviat          thiluc         
+thudc            trudng           vatalans         victim           viktrm         
+x6             
+
+Page 129 - 61 new unique words:
+--------------------------------------------------
+129              3znnn            blendid          cao              chao           
+d6n              distraction      doi              drdrtl           eke            
+eksp3zt          enta             faukes           fers             fetsta         
+flau             ghi              gin              gitthoa          ingh           
+khu              kwolati          lugng            luu              mat            
+mon              nh               nhang            nhap             nomik          
+npmrk            pbvati           phuong           relation         rizd3anl       
+rlerfn           senfl            skizprn          soat             spekt          
+spizd            streekfn         sunguy           suxao            tekntkl        
+tfart            tfetnd3          thuong           tks              toc            
+trang            trao             traul            tructi           truong         
+vaccinate        vaekstnert       vest             vkonami          welkam         
+xin            
+
+Page 130 - 60 new unique words:
+--------------------------------------------------
+130              1k               bateudar         beelans          binguy         
+bintn            consequence      detndged         dgarant          dot            
+esource          fedjut           forr             gau              heatwave       
+heebrteet        hitt             imo              issue            itkeu          
+khac             khi              khin             klatmat          konstkwens     
+lap              lich             luoc             meltin           mizdiatli      
+nguon            nj               np               peenda           preektikal     
+recorder         rid3anl          riginal          ring             riralw3        
+rtla             sang             sati             sots             sterfan        
+sto              strizm           ststam           tan              tekfan         
+tfus             thay             thuct            tic              tizmwazk       
+tol              truc             tuy              valran           wetv           
+
+Page 131 - 51 new unique words:
+--------------------------------------------------
+1ks              ahes             aurea            bravfua          bud            
+cha              conrua           flavtin          folau            gore           
+hant             hap              haust            impeekt          izkau          
+kalt             kham             krarft           kraud            laukal         
+loan             markit           mees             nhua             nla            
+ore              patitn           ppnsabl          pus              ris            
+s6               san              sige             souvenir         spireteri      
+suiva            tekt             thd              tisp             toxtas         
+trac             trach            trail            treid            trell          
+tuariz           watldlarf        weave            welst            welt           
+wiiv           
+
+Page 132 - 53 new unique words:
+--------------------------------------------------
+183              2022             28cm             31117            41             
+604              978              bach             bia              bich           
+bui              cam              chlu             chua             cic            
+cla              cudn             cuon             dan              direc          
+dkxb             dng              dui              duy              g3hhxa001a22   
+gasper           giam             hue              isbn             khanh          
+khd              nao              nhl              pham             phung          
+qb               qd               qdxb             sao              sich           
+stra             thtrc            tieng            tran             tre            
+trich            truyen           tung             vessela          vinh           
+xbiph            xong             xudt           
+
+Page 133 - 78 new unique words:
+--------------------------------------------------
+00               023              024              028              145            
+164243           20241111         231              3512             3939           
+5556             6388             7303             9954             ax             
+badinh           bas              bee              bercy            bt             
+cem              cp               ctcp             dar              din            
+h6               hanhtrangso      hay              heid             htps           
+https            huan             ier              ioe              kich           
+kip              lang             lidu             lingo            lms            
+manhtrangsomxbgdyn  minhphamblog     mss              n6i              nem            
+ntem             ntrung           nxbgd            ocr              ony            
+output           oz               pag              pees             px             
+qramn            rb               rz               sachmem          sachmemyn      
+sei              sgk              sgktieng         td               tenet          
+tit              toa              torco            tot              tpa            
+tra              txt              vn               wai              wer            
+wpe              xuy              yf             
